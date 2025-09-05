@@ -1,55 +1,47 @@
-#import "@preview/touying:0.6.1"
-#import "@preview/codly:1.3.0"
-
 #import "@preview/touying:0.6.1": *
 #import themes.university: *
-#import "@preview/cetz:0.3.2"
-#import "@preview/fletcher:0.5.5" as fletcher: node, edge
 
-// cetz and fletcher bindings for touying
-#let cetz-canvas = touying-reducer.with(reduce: cetz.canvas, cover: cetz.draw.hide.with(bounds: true))
-#let fletcher-diagram = touying-reducer.with(reduce: fletcher.diagram, cover: fletcher.hide)
+#import "@preview/numbly:0.1.0": numbly
 
-#show: university-theme.with(aspect-ratio: "16-9")
+#show: university-theme.with(
+  aspect-ratio: "16-9",
+  config-info(
+    title: [Title],
+    subtitle: [Subtitle],
+    author: [Authors],
+    date: datetime.today(),
+    institution: [Institution],
+    logo: emoji.school,
+  ),
+)
 
-// cetz animation
-#slide[
-  Cetz in Touying:
 
-  #cetz-canvas({
-    import cetz.draw: *
-    
-    rect((0,0), (5,5))
+#set heading(numbering: numbly("{1}.", default: "1.1"))
 
-    (pause,)
+#title-slide(title:"Iteratro Pattern",subtitle:"LF10 Pattern Workshops",institution: "Itch BS14", authors: ([Mika \ Boom], [Jan-Henrik \ Ammer]) )
 
-    rect((0,0), (1,1))
-    rect((1,1), (2,2))
-    rect((2,2), (3,3))
+= Patern 
 
-    (pause,)
+== Slide Title
 
-    line((0,0), (2.5, 2.5), name: "line")
-  })
+#lorem(40)
+
+#focus-slide[
+  Another variant with primary color in background...
 ]
 
-// fletcher animation
-#slide[
-  Fletcher in Touying:
-
-  #fletcher-diagram(
-    node-stroke: .1em,
-    node-fill: gradient.radial(blue.lighten(80%), blue, center: (30%, 20%), radius: 80%),
-    spacing: 4em,
-    edge((-1,0), "r", "-|>", `open(path)`, label-pos: 0, label-side: center),
-    node((0,0), `reading`, radius: 2em),
-    edge((0,0), (0,0), `read()`, "--|>", bend: 130deg),
-    pause,
-    edge(`read()`, "-|>"),
-    node((1,0), `eof`, radius: 2em),
-    pause,
-    edge(`close()`, "-|>"),
-    node((2,0), `closed`, radius: 2em, extrude: (-2.5, 0)),
-    edge((0,0), (2,0), `close()`, "-|>", bend: -40deg),
-  )
+#matrix-slide[
+  left
+][
+  middle
+][
+  right
 ]
+
+#matrix-slide(columns: 1)[
+  top
+][
+  bottom
+]
+
+#matrix-slide(columns: (1fr, 2fr, 1fr), ..(lorem(8),) * 9)
