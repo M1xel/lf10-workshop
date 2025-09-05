@@ -20,11 +20,20 @@
 
 #title-slide(title:"Iteratro Pattern",subtitle:"LF10 Pattern Workshops",institution: "Itch BS14", authors: ([Mika \ Boom], [Jan-Henrik \ Ammer]) )
 
-= Patern 
+= What are patterns ?
 
-== Slide Title
+== A short explonation
 
-#lorem(40)
+#slide(
+  config: (:),
+  repeat: auto,
+  setting: body => body,
+  composer: components.side-by-side,
+  // university theme
+  title: none,
+)[
+  ...
+]
 
 #focus-slide[
   Another variant with primary color in background...
