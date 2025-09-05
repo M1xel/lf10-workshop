@@ -38,8 +38,6 @@
 )
 
 = What are patterns ?
-=======
-= Pattern
 == A short explonation
 
 #slide(
@@ -69,9 +67,10 @@ with every example we provide
     ```
 }
 
-== What can we do with the Iterator pattern
+== What can we do with the Iterators
 
 === Basic Iterations
+
 #context {
     set text(size: text.size / (1.2))
     ```rust
