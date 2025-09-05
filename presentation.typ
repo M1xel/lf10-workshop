@@ -37,12 +37,9 @@
     authors: authors-formatted
 )
 
-<<<<<<< HEAD
 = What are patterns ?
 =======
 = Pattern
->>>>>>> 8d838b39e0a4afb930591e703eba479901d8a8cd
-
 == A short explonation
 
 #slide(
@@ -51,7 +48,6 @@
   setting: body => body,
   composer: components.side-by-side,
   // university theme
-  title: none,
 )[
   ...
 ]
