@@ -45,7 +45,6 @@
 #let box(hed, col: white,  body)= {
   rect(radius: 4pt,fill: col, width: 200pt, height: 180pt, [#hed\ #text(size: 15pt)[#body]])}
 
-   \ \
 #grid(
 
   columns: (1fr , 1fr, 1fr),
@@ -83,73 +82,14 @@ box("Benefits", col: green)[#list(marker: sym.checkmark.heavy,
 ][
 
 ]
-== difrent typs of paterns ?
+== Difrend typs of paterns ?
 #slide()[
-  t
-]
+  #image("pattern.svg", format: svg,)
 
 
 #focus-slide[
   Let us (Lettuce) 🥬 begin
 ]
-
-== Prerequisites
-From now on this is the Code we are sharing \
-with every example we provide
-#context {
-    set text(size: text.size / (1.2))
-    ```rust
-    fn main() {
-        let numbers = vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-        let words = vec!["apple", "banana", "cherry", "date", "elderberry"];
-    }
-    ```
-}
-
-== What can we do with the Iterators
-
-=== Basic Iterations
-
-#context {
-    set text(size: text.size / (1.2))
-    ```rust
-    // easy
-    println!("{:?}", numbers); //outputs: 1 2 3 4 5 6 7 8 9 10
-    // complex
-    let output: String = numbers.iter().map(|x| x.to_string()).collect::<Vec<String>>().join(" ");
-    println!("{}", output); //outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    ```
-}
-
-=== Transformations
-#context {
-    set text(size: text.size / (1.2))
-    ```rust
-    let doubled: Vec<i32> = numbers.iter().map(|x| x * 2).collect();
-    println!("{:?}", doubled);
-    //outputs: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
-    ```
-}
-
-=== Filtering
-#context {
-    set text(size: text.size / (1.2))
-    ```rust
-    let evens: Vec<i32> = numbers.iter().filter(|&x| x % 2 == 0).copied().collect();
-    println!("{:?}", evens);
-    //outputs: [2, 4, 6, 8, 10]
-    ```
-}
-
-=== Aggregating
-#context {
-    set text(size: text.size / (1.2))
-    ```rust
-    let sum = numbers.iter().fold(0, |total, &x| total + x);
-    println!("{}", sum);
-    //outputs: 55
-    ```
-}
 
 #matrix-slide[
   left

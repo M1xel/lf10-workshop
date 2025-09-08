@@ -1,0 +1,191 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    Types of Design Patterns
+  </text>
+  
+  <!-- Creational Patterns -->
+  <g>
+    <rect x="50" y="80" width="250" height="450" fill="#e74c3c" rx="15" opacity="0.9"/>
+    <text x="175" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      CREATIONAL
+    </text>
+    <text x="175" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">
+      How objects are created
+    </text>
+    
+    <!-- Singleton -->
+    <rect x="70" y="160" width="210" height="70" fill="white" rx="8" opacity="0.9"/>
+    <text x="175" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e74c3c">
+      Singleton
+    </text>
+    <text x="175" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">
+      Only one instance allowed
+    </text>
+    <text x="175" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+      Database connection, Logger
+    </text>
+    
+    <!-- Factory -->
+    <rect x="70" y="250" width="210" height="70" fill="white" rx="8" opacity="0.9"/>
+    <text x="175" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e74c3c">
+      Factory
+    </text>
+    <text x="175" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">
+      Creates objects without specifying class
+    </text>
+    <text x="175" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+      UI buttons, Shape objects
+    </text>
+    
+    <!-- Builder -->
+    <rect x="70" y="340" width="210" height="70" fill="white" rx="8" opacity="0.9"/>
+    <text x="175" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e74c3c">
+      Builder
+    </text>
+    <text x="175" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">
+      Step-by-step object construction
+    </text>
+    <text x="175" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+      Complex configurations, SQL queries
+    </text>
+    
+    <!-- Prototype -->
+    <rect x="70" y="430" width="210" height="70" fill="white" rx="8" opacity="0.9"/>
+    <text x="175" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e74c3c">
+      Prototype
+    </text>
+    <text x="175" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">
+      Clone existing objects
+    </text>
+    <text x="175" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+      Game characters, Templates
+    </text>
+  </g>
+  
+  <!-- Structural Patterns -->
+  <g>
+    <rect x="325" y="80" width="250" height="450" fill="#3498db" rx="15" opacity="0.9"/>
+    <text x="450" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      STRUCTURAL
+    </text>
+    <text x="450" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">
+      How objects are composed
+    </text>
+    
+    <!-- Adapter -->
+    <rect x="345" y="160" width="210" height="70" fill="white" rx="8" opacity="0.9"/>
+    <text x="450" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#3498db">
+      Adapter
+    </text>
+    <text x="450" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">
+      Makes incompatible interfaces work
+    </text>
+    <text x="450" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+      Legacy code integration
+    </text>
+    
+    <!-- Decorator -->
+    <rect x="345" y="250" width="210" height="70" fill="white" rx="8" opacity="0.9"/>
+    <text x="450" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#3498db">
+      Decorator
+    </text>
+    <text x="450" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">
+      Adds behavior without altering structure
+    </text>
+    <text x="450" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+      Text formatting, Middleware
+    </text>
+    
+    <!-- Facade -->
+    <rect x="345" y="340" width="210" height="70" fill="white" rx="8" opacity="0.9"/>
+    <text x="450" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#3498db">
+      Facade
+    </text>
+    <text x="450" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">
+      Simplified interface to complex system
+    </text>
+    <text x="450" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+      API wrappers, Library interfaces
+    </text>
+    
+    <!-- Composite -->
+    <rect x="345" y="430" width="210" height="70" fill="white" rx="8" opacity="0.9"/>
+    <text x="450" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#3498db">
+      Composite
+    </text>
+    <text x="450" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">
+      Tree-like object structures
+    </text>
+    <text x="450" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+      File systems, UI components
+    </text>
+  </g>
+  
+  <!-- Behavioral Patterns -->
+  <g>
+    <rect x="600" y="80" width="250" height="450" fill="#27ae60" rx="15" opacity="0.9"/>
+    <text x="725" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      BEHAVIORAL
+    </text>
+    <text x="725" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">
+      How objects communicate
+    </text>
+    
+    <!-- Observer -->
+    <rect x="620" y="160" width="210" height="70" fill="white" rx="8" opacity="0.9"/>
+    <text x="725" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#27ae60">
+      Observer
+    </text>
+    <text x="725" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">
+      Notifies dependents of changes
+    </text>
+    <text x="725" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+      Event systems, MVC
+    </text>
+    
+    <!-- Strategy -->
+    <rect x="620" y="250" width="210" height="70" fill="white" rx="8" opacity="0.9"/>
+    <text x="725" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#27ae60">
+      Strategy
+    </text>
+    <text x="725" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">
+      Switch algorithms at runtime
+    </text>
+    <text x="725" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+      Sorting algorithms, Payment methods
+    </text>
+    
+    <!-- Iterator -->
+    <rect x="620" y="340" width="210" height="70" fill="#f39c12" rx="8" opacity="0.9"/>
+    <text x="725" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      Iterator
+    </text>
+    <text x="725" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+      Access elements sequentially
+    </text>
+    <text x="725" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white" opacity="0.8">
+      Collections, Data streams
+    </text>
+    
+    <!-- Command -->
+    <rect x="620" y="430" width="210" height="70" fill="white" rx="8" opacity="0.9"/>
+    <text x="725" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#27ae60">
+      Command
+    </text>
+    <text x="725" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">
+      Encapsulates requests as objects
+    </text>
+    <text x="725" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">
+      Undo/Redo, Queuing operations
+    </text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="450" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#7f8c8d">
+    Each category solves different types of software design problems
+  </text>
+</svg>
