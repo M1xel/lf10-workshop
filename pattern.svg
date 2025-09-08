@@ -1,0 +1,94 @@
+<svg viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="250" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    What are Programming Patterns?
+  </text>
+  
+  <!-- Problem Section -->
+  <g>
+    <!-- Problem Box -->
+    <rect x="50" y="80" width="200" height="120" fill="#e74c3c" rx="10" opacity="0.9"/>
+    <text x="150" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      PROBLEM
+    </text>
+    <text x="150" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      Repeating coding
+    </text>
+    <text x="150" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      challenges that many
+    </text>
+    <text x="150" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      developers face
+    </text>
+    <text x="150" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.8">
+      • Hard to maintain code
+    </text>
+    <text x="150" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.8">
+      • Reinventing the wheel
+    </text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <polygon points="270,140 300,130 300,150" fill="#34495e"/>
+  <line x1="270" y1="140" x2="300" y2="140" stroke="#34495e" stroke-width="2"/>
+  
+  <!-- Pattern as Solution -->
+  <g>
+    <!-- Pattern Box -->
+    <rect x="320" y="80" width="200" height="120" fill="#3498db" rx="10" opacity="0.9"/>
+    <text x="420" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      PATTERN
+    </text>
+    <text x="420" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      Proven solution
+    </text>
+    <text x="420" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      template that works
+    </text>
+    <text x="420" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.8">
+      • Reusable blueprint
+    </text>
+    <text x="420" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.8">
+      • Best practices
+    </text>
+    <text x="420" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.8">
+      • Tested by many devs
+    </text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <polygon points="540,140 570,130 570,150" fill="#34495e"/>
+  <line x1="540" y1="140" x2="570" y2="140" stroke="#34495e" stroke-width="2"/>
+  
+  <!-- Benefits -->
+  <g>
+    <!-- Benefits Box -->
+    <rect x="590" y="80" width="160" height="120" fill="#27ae60" rx="10" opacity="0.9"/>
+    <text x="670" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      BENEFITS
+    </text>
+    <text x="670" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+      ✓ Better code quality
+    </text>
+    <text x="670" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+      ✓ Easier maintenance
+    </text>
+    <text x="670" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+      ✓ Team communication
+    </text>
+    <text x="670" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+      ✓ Faster development
+    </text>
+    <text x="670" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+      ✓ Proven solutions
+    </text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="400" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#7f8c8d">
+    Patterns = Reusable solutions that make programming easier and more reliable
+  </text>
+</svg>

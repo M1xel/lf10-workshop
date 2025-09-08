@@ -38,17 +38,56 @@
 )
 
 = What are patterns ?
-== A short explonation
+== What are Programming Patterns?
 
-#slide(
-  config: (:),
-  repeat: auto,
-  setting: body => body,
-  composer: components.side-by-side,
-  // university theme
-)[
-  ...
+#slide()[
+#set align()
+#let box(hed, col: white,  body)= {
+  rect(radius: 4pt,fill: col, width: 200pt, height: 180pt, [#hed\ #text(size: 15pt)[#body]])}
+
+   \ \
+#grid(
+
+  columns: (1fr , 1fr, 1fr),
+  rows: (auto),
+  gutter: 5pt,
+
+box("Problem", col: red)[*Repeating coding
+    challenges that many
+    developers face*
+    \
+- Hard to maintain code
+- Reinventing the wheel],
+
+box("Pattern", col: aqua)[
+  *Proven solution template that works*
+- Reusable blueprint
+- Best practices
+- Tested by many devs],
+
+
+box("Benefits", col: green)[#list(marker: sym.checkmark.heavy,
+  [Better code quality],
+  [Easier maintenance],
+  [Team communication],
+  [Faster development],
+  [Proven solutions])],
+)
+
+#block(
+  fill: teal,
+  inset: 8pt,
+  radius: 10pt,
+  text(size: 11pt)[Patters = Reusable solutions that make ro rammin easier and more reliable])
+
+][
+
 ]
+== difrent typs of paterns ?
+#slide()[
+  t
+]
+
 
 #focus-slide[
   Let us (Lettuce) 🥬 begin
