@@ -37,17 +37,15 @@
     authors: authors-formatted
 )
 
-= What are patterns ?
+= What are patterns?
 == What are Programming Patterns?
 
-#slide()[
-#set align()
-#let box(hed, col: white,  body)= {
-  rect(radius: 4pt,fill: col, width: 200pt, height: 180pt, [#hed\ #text(size: 15pt)[#body]])}
+#slide(align: (center))[
+#let box(hed, col: white, body) = {
+  rect(radius: 4pt, fill: col, width: 180pt, height: 150pt, [#hed\ #text(size: 15pt)[#body]])}
 
 #grid(
-
-  columns: (1fr , 1fr, 1fr),
+  columns: (1fr, 1fr, 1fr),
   rows: (auto),
   gutter: 5pt,
 
@@ -64,7 +62,6 @@ box("Pattern", col: aqua)[
 - Best practices
 - Tested by many devs],
 
-
 box("Benefits", col: green)[#list(marker: sym.checkmark.heavy,
   [Better code quality],
   [Easier maintenance],
@@ -77,32 +74,47 @@ box("Benefits", col: green)[#list(marker: sym.checkmark.heavy,
   fill: teal,
   inset: 8pt,
   radius: 10pt,
-  text(size: 11pt)[Patters = Reusable solutions that make ro rammin easier and more reliable])
-
-][
-
+  text(size: 11pt)[Patterns = Reusable solutions that make programming easier and more reliable])
 ]
-== Difrend typs of paterns ?
-#slide()[
-  #image("pattern.svg", format: svg,)
 
+== Different types of patterns?
+
+#slide(align: center)[
+  #image("patterntyps.svg")
+]
+
+= Iterator pattern
+== What is it and how does it work?
+#slide()[
+// The iterator pattern delivers an easy and performant way to iterate over a collection of objects
+#grid(  
+  columns: (1fr, 1fr, 1fr),
+  rows: (auto),
+  gutter: 5pt,
+
+figure(
+  text()[Problem
+  #image("solution1.png", width: 100%)],
+  caption: [#link("https://refactoring.guru/images/patterns/diagrams/iterator/solution1.png")[Quelle]],)
+,
+text()[]
+,
+
+figure(
+  text()[Structure
+  #image("structure.png", width: 100%)],
+  caption: [#link("https://refactoring.guru/images/patterns/diagrams/iterator/structure.png")[Quelle]],)
+,
+
+)
+]
+
+== Why use it?
+
+#slide(align: center)[
+  #image("wehrToUse.svg", width: 80%)
+]
 
 #focus-slide[
-  Let us (Lettuce) 🥬 begin
+  Let us (Lettuce) 🥬 begin 
 ]
-
-#matrix-slide[
-  left
-][
-  middle
-][
-  right
-]
-
-#matrix-slide(columns: 1)[
-  top
-][
-  bottom
-]
-
-#matrix-slide(columns: (1fr, 2fr, 1fr), ..(lorem(8),) * 9)
